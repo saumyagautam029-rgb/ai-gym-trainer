@@ -1,24 +1,24 @@
 # AI Gym Trainer
 
-AI-powered gym trainer using MediaPipe Pose. Real-time rep counting for Squats, Push-ups, and Bicep Curls with workout history tracking.
+Exercise tracking system with video upload and workout history.
 
-## Features
-- Pose Detection with MediaPipe
-- Automatic Rep Counting (Squats, Push-ups, Bicep Curls)
-- Workout History with SQLite
-- Video Upload Analysis
+## What It Does
+- Upload workout videos (MP4/MOV/AVI)
+- Select exercise type (Squats, Push-ups, Bicep Curls)
+- Simulated rep counting for cloud deployment
+- Workout history with SQLite
+- Statistics dashboard
+
+## Status
+Cloud deployment uses simulated counting due to MediaPipe dependency 
+constraints on free tiers. Local version supports real-time pose 
+estimation with MediaPipe 33-landmark detection and angle-based 
+rep counting.
 
 ## Tech Stack
 - Streamlit
-- OpenCV
-- MediaPipe
 - SQLite
 - Pandas
 
 ## Live Demo
-[Your Streamlit URL]
-
-## Run Locally
-```bash
-pip install -r requirements.txt
-streamlit run app.py
+https://ai-gym-trainer-yeorzyufseodbn4ngsn96x.streamlit.app/
